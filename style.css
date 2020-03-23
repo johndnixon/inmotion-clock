@@ -1,0 +1,157 @@
+/* simple reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* clock */
+.inmotion-clock {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 20px auto 0 auto;
+    border-radius: 100%;
+    border: 20px solid #000000;
+}
+
+/* clock hands */
+#sec-hand,
+#min-hand,
+#hour-hand {
+    position: absolute;
+    width: 30px;
+    height: 600px;
+    top: 0px;
+    left: 285px;
+}
+
+#sec-hand {
+    z-index: 3;
+}
+
+#min-hand {
+    z-index: 2;
+}
+
+#hour-hand {
+    z-index: 1;
+}
+
+#sec-hand:before,
+#min-hand:before,
+#hour-hand:before{
+    content: "";
+    position: absolute;
+}
+
+
+#min-hand:before,
+#hour-hand:before{
+    background-color: #000;
+}
+
+#hour-hand:before {
+    width: 30px;
+    height: 120px;
+    top: 195px;
+    border-radius: 30px;
+}
+
+#min-hand:before {
+    width: 15px;
+    height: 200px;
+    top: 115px;
+    left: 6.5px;
+    border-radius: 15px;
+}
+
+#sec-hand:before {
+    width: 5px;
+    height: 200px;
+    top: 115px;
+    left: 12px;
+    border-radius: 5px;
+    background-color: #c52228;
+}
+
+#sec-hand:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 285px;
+    left: 0;
+    border-radius: 100%;
+    background-color: #c52228;
+    z-index: 4;
+}
+
+/* clock numbers */
+.inmotion-clock span{
+    font-size: 50px;
+    font-style: italic;
+    font-family: adelle-sans,Helvetica,Arial,sans-serif;
+    position: absolute;
+    color: #000;
+}
+
+.inmotion-clock span:first-of-type {
+    top: 52px;
+    right: 164px;
+}
+
+.inmotion-clock span:nth-child(2) {
+    top: 143px;
+    right: 66px;
+}
+
+.inmotion-clock span:nth-child(3) {
+    top: 272px;
+    right: 25px;
+}
+
+.inmotion-clock span:nth-child(4) {
+    bottom: 150px;
+    right: 67px;
+}
+
+.inmotion-clock span:nth-child(5) {
+    bottom: 50px;
+    right: 160px;
+}
+
+.inmotion-clock span:nth-child(6) {
+    bottom: 20px;
+    right: 283px;
+}
+
+.inmotion-clock span:nth-child(7) {
+    bottom: 50px;
+    left: 160px;
+}
+
+.inmotion-clock span:nth-child(8) {
+    bottom: 150px;
+    left: 67px;
+}
+
+.inmotion-clock span:nth-child(9) {
+    top: 272px;
+    left: 25px;
+}
+
+.inmotion-clock span:nth-child(10) {
+    top: 143px;
+    left: 66px;
+}
+
+.inmotion-clock span:nth-child(11) {
+    top: 52px;
+    left: 164px;
+}
+
+.inmotion-clock span:last-of-type {
+    top: 20px;
+    right: 275px;
+    color: #c52228;
+}
